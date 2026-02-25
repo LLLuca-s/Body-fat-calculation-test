@@ -22,7 +22,7 @@ npx playwright install
 npx playwright test
 
 開啟 UI 模式 (推薦，包含時光機重播功能)：
-```Bash
+```bash
 npx playwright test --ui
 
 ### 3. 測試涵蓋範疇
