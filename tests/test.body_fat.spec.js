@@ -13,7 +13,7 @@ test.describe('體脂計算器測試', () => {
 
   // ✅ 測試 1：確認頁面標題正確載入
   test('頁面標題正確顯示', async ({ page }) => {
-    await expect(page).toHaveTitle('體脂計算器');
+    await expect(page).toHaveTitle('體脂分析儀| Body Composition Pro');
     const heading = page.locator('h1');
     await expect(heading).toContainText('體脂');
     await expect(heading).toContainText('分析儀');
