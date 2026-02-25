@@ -8,7 +8,8 @@ test.describe('體脂計算器測試', () => {
 
   // 每個測試前先開啟網頁
   test.beforeEach(async ({ page }) => {
-    await page.goto(FILE_PATH);
+    // 加上 waitUntil: 'domcontentloaded'，這會讓測試在字體/圖片還沒載完前就開始，速度更快且更穩定
+    await page.goto(FILE_PATH, { waitUntil: 'domcontentloaded' });
   });
 
   // ✅ 測試 1：確認頁面標題正確載入
