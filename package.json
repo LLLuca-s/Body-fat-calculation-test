@@ -1,0 +1,22 @@
+{
+  "name": "my-body-fat-project",
+  "version": "1.0.0",
+  "description": "這是一個基於 Web 技術開發的輕量化體脂率計算工具，採用莫蘭迪色系設計，提供優雅且直覺的使用者介面。",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "playwright test",
+    "test:head": "playwright test --headed",
+    "test:ui": "playwright test --ui",
+    "test:debug": "playwright test --debug"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.58.2"
+  }
+}
