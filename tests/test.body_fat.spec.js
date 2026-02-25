@@ -2,7 +2,7 @@ const { test, expect } = require('@playwright/test');
 const path = require('path');
 
 // 網頁路徑（請確認檔案位置正確）
-const FILE_PATH = 'file:///Users/bad/Desktop/my-helmet/my-body-fat-project/body_fat.html';
+const FILE_PATH = 'file:///Users/bad/Desktop/my-helmet/my-body-fat-project/index.html';
 
 test.describe('體脂計算器測試', () => {
 

@@ -2,7 +2,7 @@ const { test, expect } = require('@playwright/test');
 
 test('測試體脂分析儀的核心計算功能', async ({ page }) => {
   // 1. 前往網頁 (確保路徑正確)
-  await page.goto('file://' + __dirname + '/../body_fat.html');
+  await page.goto('file://' + __dirname + '/../index.html');
 
   // 2. 檢查標題 (使用正則表達式忽略空格問題)
   await expect(page.locator('h1')).toHaveText(/體脂.*分析儀/);
